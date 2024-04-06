@@ -1,25 +1,37 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import menuIcon from './images/menuIcon.svg';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <div className="options">
+        <div className="letter-options">
+          <h1 className="a">A</h1>
+          <h1 className="b">B</h1>
+          <h1 className="c">C</h1>
+        </div>
+        <div className="number-options-wheel">
+          <h1 className="one">1</h1>
+          <h1 className="two">2</h1>
+          <h1 className="three">3</h1>
+          <h1 className="four">4</h1>
+          <h1 className="five">5</h1>
+        </div>
+      </div>
+
+
+      <div className="spin">
+        <h1 className="spin-text">SPIN</h1>
+      </div>
+
+      <div className="foot">
+        <h1 className="money">$ 234623</h1>
+        <div className="img-circle">
+          <img className="img-style" src={menuIcon}/>
+        </div>
+      </div>
+    </>
   );
 }
 

@@ -1,38 +1,92 @@
-.App {
-  text-align: center;
+body {
+  
+  background-image: radial-gradient(circle at center center, #2c7b8d, #00252e), repeating-radial-gradient(circle at center left, #ffffff, #9bcbd6, 8px, transparent 30px, transparent 30px);
+  background-blend-mode: multiply;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.options {
+  position: static;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.letter-options {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-flow: column wrap;
+  position: absolute;
+}
+
+.a, .b, .c {
+  border: 5px solid rgb(208, 156, 0);
+  border-radius: 50%;
+  background-color: rgb(232, 186, 50);
+  color: rgb(255, 239, 192);
+  height: 40px;
+  width: 40px;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+.number-options-wheel {
+  width: 70px;
+  margin: 0 auto;
+  padding: 0;
+  display: flex;
+  flex-flow: column wrap;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.one, .two, .three, .four, .five {
+  border: 10px solid rgb(253, 244, 195);
+  opacity: 1;
+  border-radius: 50%;
+  color: rgb(255, 244, 195);
+  background-color: #000000;
+  height: 50px;
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.spin {
+  display: flex;
+  justify-content: center;
+}
+
+.spin-text {
+  border: 30px solid rgb(208, 156, 0);
+  height: 200px;
+  border-radius:50%;
+  width: 200px;
+  color: rgb(229, 202, 123);
+  font-size: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.foot {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.money {
+  display: flex;
+  justify-content: flex-start;
+  color: rgb(208, 156, 0);
+}
+
+.img-circle {
+  border: 5px solid rgb(208, 156, 0);
+  border-radius: 50%;
+  background-color: rgb(232, 186, 50);
+  color: rgb(255, 239, 192);
+  height: 40px;
+  width: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.img-style {
+  width: 20px;
 }
