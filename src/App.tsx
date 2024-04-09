@@ -4,7 +4,7 @@ import menuIcon from './images/menuIcon.svg';
 
 function App() {
   return (
-    <>
+    <div className="app-container">
       <div className="options">
         <div className="letter-options">
           <h1 className="a">A</h1>
@@ -20,7 +20,6 @@ function App() {
         </div>
       </div>
 
-
       <div className="spin">
         <h1 className="spin-text">SPIN</h1>
       </div>
@@ -28,10 +27,10 @@ function App() {
       <div className="foot">
         <h1 className="money">$ 234623</h1>
         <div className="img-circle">
-          <img className="img-style" src={menuIcon}/>
+          <img className="img-style" src={menuIcon} alt="menu icon" />
         </div>
       </div>
-    </>
+    </div>
   );
 }
 
